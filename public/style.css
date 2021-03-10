@@ -56,8 +56,29 @@ header nav {
 .nav-item-login a:hover {
   color: #202b47;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: black;
   box-shadow: #d3d3d3;
+}
+
+#background-pic {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#background-pic #image-txt {
+  position: absolute;
+  top: 35vh;
+  /* text-shadow: 2px 2px; */
+  z-index: 1;
+}
+
+#background-pic .backgroundIMG {
+  position: absolute;
+  display: block;
+  margin: auto;
+  min-width: 100%;
+  height: 100%;
 }
 
 body {
