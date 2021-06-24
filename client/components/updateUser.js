@@ -49,72 +49,77 @@ export class UpdateUser extends React.Component {
   }
   render() {
     return (
-      <div>
-        <h1>Update Profile</h1>
-        <div>
-          <form onSubmit={this.handleSubmit}>
-            <div>
-              <label>
-                First Name:
-                <input
-                  type="text"
-                  name="firstName"
-                  value={this.state.firstName}
-                  onChange={this.handleChange}
-                />
-              </label>
-            </div>
-
-            <div>
-              <label>
-                Last Name:
-                <input
-                  type="text"
-                  name="lastName"
-                  value={this.state.lastName}
-                  onChange={this.handleChange}
-                />
-              </label>
-            </div>
-
-            <div>
-              {' '}
-              <label>
-                Address:
-                <input
-                  type="text"
-                  name="address"
-                  onChange={this.handleChange}
-                />
-              </label>
-            </div>
-
-            <div>
-              <label>
-                Email:
-                <input
-                  type="text"
-                  name="email"
-                  value={this.state.email}
-                  onChange={this.handleChange}
-                />
-              </label>
-            </div>
-
-            <div>
-              <label>
-                Password:
-                <input
-                  name="password"
-                  type="password"
-                  onChange={this.handleChange}
-                />
-              </label>
-            </div>
-
-            <input type="submit" value="Submit" />
-          </form>
+      <div className="signupContainer">
+        <div className="sectionHeader">
+          <h1>Update Profile</h1>
         </div>
+
+        <section className="formAndBtns">
+          <div>
+            <form className="signupForm" onSubmit={this.handleSubmit}>
+              <div>
+                <label htmlFor="firstName">
+                  First Name:
+                  <input
+                    type="text"
+                    name="firstName"
+                    value={this.state.firstName}
+                    onChange={this.handleChange}
+                  />
+                </label>
+              </div>
+
+              <div>
+                <label htmlFor="lastName">
+                  Last Name:
+                  <input
+                    type="text"
+                    name="lastName"
+                    value={this.state.lastName}
+                    onChange={this.handleChange}
+                  />
+                </label>
+              </div>
+
+              <div>
+                {' '}
+                <label htmlFor="address">
+                  Address:
+                  <input
+                    type="text"
+                    name="address"
+                    onChange={this.handleChange}
+                  />
+                </label>
+              </div>
+
+              <div>
+                <label htmlFor="email">
+                  Email:
+                  <input
+                    type="text"
+                    name="email"
+                    value={this.state.email}
+                    onChange={this.handleChange}
+                  />
+                </label>
+              </div>
+
+              <div>
+                <label htmlFor="password">
+                  Password:
+                  <input
+                    name="password"
+                    type="password"
+                    onChange={this.handleChange}
+                  />
+                </label>
+              </div>
+
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </section>
       </div>
     )
   }

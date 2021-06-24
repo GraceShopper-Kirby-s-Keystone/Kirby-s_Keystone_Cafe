@@ -158,6 +158,142 @@ form div {
   align-items: center;
 }
 
+.signupContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2em;
+}
+
+.sectionHeader {
+  font-size: 3em;
+  color: black;
+  line-height: 1em;
+  margin-bottom: 1em;
+  text-align: left;
+  width: 100%;
+}
+
+.notearyColor {
+  color: rgb(60, 60, 197);
+}
+
+.formAndBtns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* ---- buttons ---- */
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2em;
+}
+
+.googleSignupBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  border: 1px solid lightgrey;
+  background-color: transparent;
+  padding: 0.2em;
+}
+
+.googleSignupBtn img {
+  height: 22px;
+  width: auto;
+  margin-right: 1em;
+}
+
+.btnContainer button,
+.btnContainer a,
+.signMeUpBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  border-radius: 5px;
+  padding: 0.5em;
+  font-size: 18px;
+}
+
+.signMeUpBtn {
+  border: transparent;
+  background-color: rgb(60, 60, 197);
+  color: white;
+  margin-right: 10px;
+}
+
+/* ---- form ---- */
+
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 450px;
+}
+
+.signupForm label {
+  opacity: 0.6;
+}
+
+.signupForm > div:not(.btnContainer) {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  width: 100%;
+}
+
+.signupForm > div > input[type='text'],
+.signupForm > div > input[type='password'] {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  height: 2.4em;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.signupForm > span {
+  border: 1px solid lightgrey;
+  padding: 0.5em;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.signupPhoto {
+  background-image: url('https://i.imgur.com/r6zFlvJ.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  width: 62%;
+}
+
+.transparencyMask {
+  background-image: linear-gradient(to left, transparent, rgb(255, 255, 255));
+  z-index: 2;
+  height: 80vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 #container {
   display: flex;
   flex-direction: row-reverse;
