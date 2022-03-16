@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-/**
+/**I
  * ACTION TYPES
  */
 

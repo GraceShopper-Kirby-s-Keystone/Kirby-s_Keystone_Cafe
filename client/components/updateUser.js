@@ -49,77 +49,68 @@ export class UpdateUser extends React.Component {
   }
   render() {
     return (
-      <div className="signupContainer">
-        <div className="sectionHeader">
-          <h1>Update Profile</h1>
-        </div>
-
-        <section className="formAndBtns">
+      <div className="NewUpdateUserContainer">
+        <h1>Update Profile Here</h1>
+        <div className="NewUpdateUserContainerRight">
           <div>
-            <form className="signupForm" onSubmit={this.handleSubmit}>
-              <div>
-                <label htmlFor="firstName">
-                  First Name:
-                  <input
-                    type="text"
-                    name="firstName"
-                    value={this.state.firstName}
-                    onChange={this.handleChange}
-                  />
-                </label>
+            <form className="flexCol" onSubmit={this.handleSubmit}>
+              <div className="formGroup">
+                <label className="formLabel">First Name</label>
+                <input
+                  className="formControl"
+                  type="text"
+                  name="firstName"
+                  value={this.state.firstName}
+                  onChange={this.handleChange}
+                />
               </div>
 
-              <div>
-                <label htmlFor="lastName">
-                  Last Name:
-                  <input
-                    type="text"
-                    name="lastName"
-                    value={this.state.lastName}
-                    onChange={this.handleChange}
-                  />
-                </label>
+              <div className="formGroup">
+                <label className="formLabel">Last Name</label>
+                <input
+                  className="formControl"
+                  type="text"
+                  name="lastName"
+                  value={this.state.lastName}
+                  onChange={this.handleChange}
+                />
               </div>
 
-              <div>
-                {' '}
-                <label htmlFor="address">
-                  Address:
-                  <input
-                    type="text"
-                    name="address"
-                    onChange={this.handleChange}
-                  />
-                </label>
+              <div className="formGroup">
+                <label className="formLabel">Address</label>
+                <input
+                  className="formControl"
+                  type="text"
+                  name="address"
+                  onChange={this.handleChange}
+                />
               </div>
 
-              <div>
-                <label htmlFor="email">
-                  Email:
-                  <input
-                    type="text"
-                    name="email"
-                    value={this.state.email}
-                    onChange={this.handleChange}
-                  />
-                </label>
+              <div className="formGroup">
+                <label className="formLabel">Email</label>
+                <input
+                  className="formControl"
+                  type="text"
+                  name="email"
+                  value={this.state.email}
+                  onChange={this.handleChange}
+                />
               </div>
 
-              <div>
-                <label htmlFor="password">
-                  Password:
-                  <input
-                    name="password"
-                    type="password"
-                    onChange={this.handleChange}
-                  />
-                </label>
+              <div className="formGroup">
+                <label className="formLabel">Password</label>
+                <input
+                  className="formControl"
+                  name="password"
+                  type="password"
+                  onChange={this.handleChange}
+                />
               </div>
 
               <input type="submit" value="Submit" />
             </form>
           </div>
-        </section>
+        </div>
       </div>
     )
   }

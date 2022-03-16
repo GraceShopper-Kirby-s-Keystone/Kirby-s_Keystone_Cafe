@@ -14,7 +14,7 @@ class AllProducts extends React.Component {
       <section id="background-pic">
         <div>
           <div id="image-txt">
-            <h1>All Products</h1>
+            <h1>All Products HERE!</h1>
             <h2>List of Products:</h2>
             <div id="all-products-wrapper">
               {products.map(product => {

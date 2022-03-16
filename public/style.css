@@ -158,142 +158,6 @@ form div {
   align-items: center;
 }
 
-.signupContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 2em;
-}
-
-.sectionHeader {
-  font-size: 3em;
-  color: black;
-  line-height: 1em;
-  margin-bottom: 1em;
-  text-align: left;
-  width: 100%;
-}
-
-.notearyColor {
-  color: rgb(60, 60, 197);
-}
-
-.formAndBtns {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-}
-
-/* ---- buttons ---- */
-
-.btnContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-top: 2em;
-}
-
-.googleSignupBtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  border: 1px solid lightgrey;
-  background-color: transparent;
-  padding: 0.2em;
-}
-
-.googleSignupBtn img {
-  height: 22px;
-  width: auto;
-  margin-right: 1em;
-}
-
-.btnContainer button,
-.btnContainer a,
-.signMeUpBtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 220px;
-  border-radius: 5px;
-  padding: 0.5em;
-  font-size: 18px;
-}
-
-.signMeUpBtn {
-  border: transparent;
-  background-color: rgb(60, 60, 197);
-  color: white;
-  margin-right: 10px;
-}
-
-/* ---- form ---- */
-
-.signupForm {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: 450px;
-}
-
-.signupForm label {
-  opacity: 0.6;
-}
-
-.signupForm > div:not(.btnContainer) {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1em;
-  width: 100%;
-}
-
-.signupForm > div > input[type='text'],
-.signupForm > div > input[type='password'] {
-  display: flex;
-  flex-grow: 1;
-  width: 100%;
-  height: 2.4em;
-  padding: 0.5em;
-  border-radius: 5px;
-}
-
-.signupForm > span {
-  border: 1px solid lightgrey;
-  padding: 0.5em;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.signupPhoto {
-  background-image: url('https://i.imgur.com/r6zFlvJ.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 5px;
-  width: 62%;
-}
-
-.transparencyMask {
-  background-image: linear-gradient(to left, transparent, rgb(255, 255, 255));
-  z-index: 2;
-  height: 80vh;
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-
 #container {
   display: flex;
   flex-direction: row-reverse;
@@ -317,4 +181,121 @@ th {
   background-color: green;
   padding: 10px;
   border-radius: 10px;
+}
+
+/* update profile */
+
+.profileCont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.profileMasterCont {
+  display: flex;
+  padding: 10px;
+  justify-content: space-evenly;
+  margin-top: 2em;
+}
+
+.profileImgCont {
+  display: flex;
+  justify-content: center;
+}
+
+.profileImg {
+  max-width: 10rem;
+  max-height: 10rem;
+  border-radius: 50%;
+  border: solid black;
+}
+
+.nameCont {
+  text-align: center;
+  overflow-wrap: break-word;
+  max-width: 500px;
+}
+
+.emailCont {
+  text-align: center;
+  overflow-wrap: break-word;
+  display: inline-block;
+  max-width: 500px;
+}
+
+.updateProfileCont {
+  display: inline;
+}
+
+.updateProfileCont a {
+  text-decoration: none;
+  color: white;
+  background-color: blue;
+  padding: 8px;
+  float: right;
+  border: none;
+
+  border-radius: 16px;
+}
+
+.NewUpdateUserContainer {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.NewUpdateUserContainerLeft {
+  flex: 1 1 400px;
+}
+
+.NewUpdateUserContainerRight {
+  flex: 1 1 400px;
+}
+
+.flexCol {
+  margin: 0 auto;
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+}
+.formGroup {
+  margin-bottom: 1rem;
+}
+.formLabel {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+.formControl {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.imagePreview {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+  height: max-content;
+  width: auto;
+}
+
+.imagePreview img {
+  height: 200px;
+  width: auto;
 }
